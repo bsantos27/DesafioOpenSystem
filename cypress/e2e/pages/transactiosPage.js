@@ -27,6 +27,7 @@ class TransactionsPage {
     }
 
     fillWithdrawn(saque) {
+        cy.wait(1000);
         cy.get(transactionsElements.typeWithdrawn()).type(saque);
     }
 
